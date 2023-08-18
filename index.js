@@ -13,7 +13,7 @@ connectDB()
 const BookModel = require('./models/book.model')
 
 
-app.get('/',(req,res)=>{
+app.use('/',(req,res)=>{
   res.send('Vercel backend app creation')
 })
 
