@@ -12,6 +12,11 @@ connectDB()
 
 const BookModel = require('./models/book.model')
 
+
+app.get('/',(req,res)=>{
+  res.send('Vercel backend app creation')
+})
+
 app.get('/api/v1/books', async (req, res) => {
 
     const { limit = 5, orderBy = 'name', sortBy = 'asc', keyword } = req.query
